@@ -1,3 +1,47 @@
+Week 1 Answers
+
+Steve Gallagher
+
+
+*******************************************
+
+
+What is a route, and how do you specify one in Flask?
+
+	The route is the path the app is using. Specified with: @app.route("/")
+
+
+
+What is the only route we’ve specified in our application?	
+
+	@app.route("/")
+
+
+What is the method that gets called when we hit that route?
+
+	def hello():
+    return "Hello World!"
+	
+
+If I wanted to add a route at “/world” that printed “Hello, World” on the screen, what would that code look like?
+
+	@app.route("/world")
+	def hello():
+   	 return "Hello World!"
+
+If I create a new application and import testingflask.py (a.k.a. I am not running it directly), will code 
+under the ‘if __name__ == “__main__”: be executed? Why not?
+
+	No. Code in that location is executed only if the program is run directly.
+
+
 *** Cut and paste the for loop here ***
 
+			{% for message in messages %}
+{{message}}
+					{% endfor %}
+
+
 *** What is the for loop doing? ***
+
+	It displays the messages that the user enters in the text box.
